@@ -26,12 +26,14 @@ public class quiz10 {
         //3 × 4 = 12
         //....
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
         while (true){
+            int n = sc.nextInt();
+            if (n<2 || n>9) continue; //돌려보내기
             for (int i = 1; i<=9; i++){
                 System.out.println(n + "*" + i + "=" + (n*i) );
             }
         }
+
 
     }
 }
