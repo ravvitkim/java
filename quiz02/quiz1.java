@@ -4,6 +4,27 @@ import java.util.Arrays;
 
 public class quiz1 {
     public static void main(String[] args) {
+
+        int nums [] = {};
+        int max = Integer.MAX_VALUE;
+        int maxIndex=0;
+
+        int min = Integer.MIN_VALUE;
+        int minIndex=0;
+
+        for (int i = 0; i <nums.length; i++){
+            if (nums[i]>max){
+                max = nums[i];
+                maxIndex = i;
+            }
+            if (nums[i]<min){
+                min = nums[i];
+                minIndex = i;
+            }
+        }
+        System.out.println("최댓값:"+max+"인덱스:"+maxIndex);
+
+
         //문제 1. 최댓값과 인덱스찾기
         //
         //9개의 서로 다른 자연수
@@ -30,13 +51,6 @@ public class quiz1 {
 //
 //            }
 //        }
-
-        int[] nums = new int[9];
-
-        for (int i = 0; i < 9; i++) {
-            int x = (int) (Math.random() * 100) + 1;
-            nums[i] = x;
-        }
 
 
         //
